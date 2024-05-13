@@ -1,0 +1,37 @@
+<html>
+<head>
+<style>
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    position: absolute;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+}
+
+form {
+    text-align: center;
+}
+</style>
+</head>
+<body>
+<h1>Tenant Sign up</h1>
+<form id="myForm" action="http://localhost/CSE370_project/add_tenant.php" method="post">
+Tenant ID: <input type="text" name="Tenant_ID" /><br><br>
+Name: <input type="text" name="Name" /><br><br>
+Contact Number: <input type="number" name="Contact_num" /><br><br>
+Password: <input type="password" name="password" /><br><br>
+Resident ID: <input type="text" name="T_Resident_ID" /><br><br>
+Flat ID: <input type="text" name="T_Flat_ID" id="T_Flat_ID" onblur="fetchOwnerDetails()" /><br><br>
+<input type="submit"/>
+</form>
+</body>
+</html>
